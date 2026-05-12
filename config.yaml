@@ -1,0 +1,32 @@
+project:
+  name: rear_wing_optimization
+  airfoil: NACA23012
+
+paths:
+  base_airfoil_path: data/base_airfoil/NACA23012.dat
+  samples_csv: data/samples.csv
+  next_case_csv: data/next_case.csv
+  cases_dir: cases
+
+geometry:
+  chord_mm: 300
+  base_t_over_c: 0.12
+  h_mm: 1000
+  invert_y: true
+  rotation_center: quarter_chord
+  rotation_sign: 1
+  n_points_per_surface: 200
+  min_te_thickness_ratio: 0.002
+
+design_variables:
+  alpha_deg:
+    min: 0
+    max: 8
+  t_over_c:
+    min: 0.10
+    max: 0.14
+
+optimization:
+  objective: negative_CL
+  n_initial_lhs: 10
+  random_seed: 1
