@@ -29,4 +29,11 @@ design_variables:
 optimization:
   objective: negative_CL
   n_initial_lhs: 10
+  n_infill_ei: 10
+  ei_batch_size: 4
+  ei_min_distance: 0.20
+  ei_min_distance_alpha: 0.4
+  ei_min_distance_t: 0.001
+  ei_n_candidates: 200000
+  gp_length_scale: [1.0, 0.02]
   random_seed: 1

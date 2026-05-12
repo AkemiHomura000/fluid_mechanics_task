@@ -1,2 +1,4 @@
 case_id,source,alpha_deg,t_over_c,CL,CD,target,converged,status,note
-10,EI,4.34983,0.125679,,,,,pending,
+11,EI,2.891546,0.137522,,,,,pending,
+12,EI,1.905059,0.108651,,,,,pending,
+13,EI,3.732591,0.101636,,,,,pending,
