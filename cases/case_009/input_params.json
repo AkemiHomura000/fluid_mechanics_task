@@ -1,0 +1,10 @@
+{
+  "airfoil": "NACA23012",
+  "alpha_deg": 4.9296043032531625,
+  "case_id": 9,
+  "chord_mm": 300,
+  "h_mm": 1000,
+  "rotation_center": "quarter_chord",
+  "rotation_sign": 1,
+  "t_over_c": 0.10012873064638617
+}
