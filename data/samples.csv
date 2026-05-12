@@ -8,4 +8,5 @@ case_id,source,alpha_deg,t_over_c,CL,CD,target,converged,status,note
 7,LHS,1.329732,0.128942,-1.4588,,,yes,success,
 8,LHS,3.303195,0.107267,-2.6317,,,yes,success,
 
-9,EI,4.929604,0.100129,,,,,pending,
+9,EI,4.929604,0.1001290,-3.5863,,,yes,success,
+10,EI,4.34983,0.125679,,,,,pending,
