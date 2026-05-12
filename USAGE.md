@@ -84,7 +84,34 @@ data/samples.csv
 - 将 CL/CD 回填到 data/samples.csv。
 - 增加 Kriging + EI 脚本推荐下一组工况。
 
-## 7. 上下表面可视化
+## 7. Kriging + EI 选点
+
+在完成一批工况并得到 CL 后：
+
+1. 在 data/samples.csv 中将对应行更新为：
+  - `CL` 填入 Fluent 输出
+  - `target = -CL`
+  - `converged = yes`
+  - `status = success`
+2. 运行 EI 推荐：
+
+```
+python3 -m src.suggest_next_ei
+```
+
+可选参数（随机候选点数）：
+
+```
+python3 -m src.suggest_next_ei --n-candidates 20000
+```
+
+输出内容：
+
+- 生成下一个 `cases/case_###/` 几何文件
+- 写入 `data/next_case.csv`
+- 追加一行 `pending` 到 `data/samples.csv`
+
+## 8. 上下表面可视化
 
 按工况目录绘制：
 
