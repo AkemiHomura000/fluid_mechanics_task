@@ -136,3 +136,15 @@ python3 -m src.plot_surfaces --upper cases/case_001/upper_surface.txt --lower ca
 ```
 python3 -m src.plot_surfaces --case-dir cases/case_001 --out figures/surfaces_case_001.png
 ```
+
+批量生成所有工况图片（输出到 figures）：
+
+```
+python3 -m src.plot_surfaces --all-cases --cases-dir cases --out-dir figures
+```
+
+默认命名格式为：
+
+```
+figures/surfaces_case_001.png
+```
