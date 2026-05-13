@@ -10,6 +10,7 @@ case_id,source,alpha_deg,t_over_c,CL,CD,target,converged,status,note
 
 9,EI,4.929604,0.1001290,-3.5863,,,yes,success,
 10,EI,4.34983,0.1256790,-3.2246,,,yes,success,
-11,EI,2.891546,0.137522,,,,,pending,
+11,EI,2.891546,0.137522,-2.3569,,,yes,success,
 12,EI,1.905059,0.108651,,,,,pending,
-13,EI,3.732591,0.101636,,,,,pending,
+13,EI,3.732591,0.101636,-2.8863,,,yes,success,
+14,EI,0.356486,0.136272,-0.8859,,,yes,success,
